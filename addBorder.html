@@ -17,10 +17,8 @@
        picture.push(wall)
        
        for(let i = 1; i < picture.length - 1; i++){
-        console.log(picture[i])
            picture[i] = ''.concat(picture[i], '*');
-           
-       }
+        }
        return picture;
     }
     console.log(addBorder(["abc", "ded"]))

@@ -11,6 +11,7 @@
 </body>
 <script>
     function compareTriplets(a, b) {
+        
         const { A, B } = a.reduce((acc, cur) => {
         const { counter } = acc;
         if (a[counter] > b[counter]) {
@@ -21,6 +22,7 @@
         acc.counter++;
         return acc;
         }, { A: 0, B: 0, counter: 0 });
+
         return [A, B];
     }
     console.log(compareTriplets([2,5,3], [4,5,2]))
