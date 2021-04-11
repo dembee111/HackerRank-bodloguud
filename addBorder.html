@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add border</title>
+</head>
+<body>
+
+    <h1>Add border</h1>
+    <p id="hero"></p>
+
+</body>
+<script>
+    function addBorder(picture){
+       const wall = '*'.repeat(picture[0].length + 2);
+        
+       picture.unshift(wall)
+       picture.push(wall)
+       
+       for(let i = 1; i < picture.length - 1; i++){
+        console.log(picture[i])
+           picture[i] = ''.concat(picture[i], '*');
+           
+       }
+       return picture;
+    }
+    console.log(addBorder(["abc", "ded"]))
+   
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reduce method</title>
+</head>
+<body>
+
+    <h1>My First Heading</h1>
+    <p id="hero"></p>
+
+</body>
+<script>
+    function compareTriplets(a, b) {
+        const { A, B } = a.reduce((acc, cur) => {
+        const { counter } = acc;
+        if (a[counter] > b[counter]) {
+        acc.A++;
+        } else if (a[counter] < b[counter]) {
+        acc.B++;
+        }
+        acc.counter++;
+        return acc;
+        }, { A: 0, B: 0, counter: 0 });
+        return [A, B];
+    }
+    console.log(compareTriplets([2,5,3], [4,5,2]))
+   
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Two Digits</title>
+</head>
+<body>
+
+    <h1>Add Two Digits</h1>
+    <p id="hero"></p>
+
+</body>
+<script>
+    function addTwoDigits(n){
+       const nums = n.toString().split('');
+       return nums.reduce((a, b)=> {
+           return parseInt(a) + parseInt(b);
+       })
+    }
+    console.log(addTwoDigits(41))
+   
+</script>
+</html>
