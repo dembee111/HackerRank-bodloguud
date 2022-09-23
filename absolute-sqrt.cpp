@@ -10,5 +10,5 @@ int main()
     cin >> b;
     c = sqrt(a * a + b * b);
     s = (a * b) / 2;
-    cout << "first value is : " << c << "second value is " << s;
+    cout << "first value is : " << c << " second value is " << s;
 }
