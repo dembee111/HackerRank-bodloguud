@@ -5,8 +5,13 @@ function minBribe(queue) {
         const pos = queue[i], at = i + 1;
         if (pos - at > 2) { isText = "Too chaotic" } 
         for (j = Math.max(0, pos - 2); j < i; j++) {
+            debugger;
             if (queue[j] > pos) { bribes++ }
         }
     } 
     isText ? console.log(isText) : console.log(bribes)
 }
+
+minBribe([2, 1, 3, 5, 4])
+
+module.exports = minBribe
